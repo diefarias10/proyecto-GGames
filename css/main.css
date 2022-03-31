@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTRUCTURA */
+
+.divPadre {
+    display: grid;
+    grid-template-areas: "divHeader divHeader divHeader"
+        "divDestacado divDestacado divDestacado"
+        "divArticulos divArticulos divArticulos"
+        "divFooter divFooter divFooter ";
+}
+
+.divHeader {
+    background-color: #E9E5D6;
+    grid-area: divHeader;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divDestacado {
+    background: linear-gradient(180deg, rgba(54, 39, 6, 1) 0%, rgba(54, 39, 6, 0.639093137254902) 50%, rgba(233, 229, 214, 1) 100%);
+
+    grid-area: divDestacado;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divArticulos {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ACB992;
+    grid-area: divArticulos;
+}
+
+.divFooter {
+    background-color: yellowgreen;
+    grid-area: divFooter;
+}
+
+/* LOGO */
+
+.logo {
+    width: 15rem;
+    display: flex;
+    padding: 0.3rem;
+}
+
+.logo img {
+    width: 15rem;
+}
+
+/* MENU */
+
+.menu {
+    margin-right: 1rem;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* DESTACADO */
+
+.imgDestacado {
+    padding: 1rem;
+}
+
+.imgDestacado img {
+    width: 21rem;
+}
+
+.datosDestacado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.infoDestacado {
+    margin-top: 2rem;
+}
+
+.botonesDestacado {
+    margin-top: 3rem;
+}
+
+.puntosDestacado {
+    margin-top: 0.5rem;
+}
+
+.puntosDestacado img {
+    width: 2rem;
+    margin: 0.09rem;
+}
+
+.videoDestacado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.videoDestacado iframe {
+    width: 29rem;
+}
+
+/* ARTICULOS */
+
+.articulo {
+    background-color: white;
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.articulo .datosArticulo {
+    padding: 1rem;
+}
+
+.articulo .imgArticulo{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.articulo .imgArticulo img{
+    width: 12rem;
+}
+
+.articulo .puntosArticulo img {
+    width: 1.5rem;
+}
+
+.articulo .infoArticulo{
+    margin: 1rem 0;
+}
+
+.articulo .botonesArticulo{
+    display: flex;
+    justify-content: space-between;
+}
