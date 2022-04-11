@@ -1,0 +1,44 @@
+@media only screen and (max-width: 400px){
+    .menu a {
+        font-size: 1rem;
+    }
+    
+    iframe {
+        display: none;
+    }
+
+    .divDestacado{
+        flex-direction: column;
+    }
+
+    .divDestacado .btnPrimario, .divDestacado .btnSecundario  {
+        font-size: 1.2rem;
+    }
+
+    .divDestacado .botonesDestacado {
+        text-align: center;
+    }
+
+    .divArticulos{
+        flex-direction: column;
+       align-items: center;
+    }
+
+    .divArticulos .articulo {
+        margin-top: 1rem;
+    }
+
+    .imgDestacado {
+        text-align: center;
+    }
+
+    .logo img{
+        width: 12rem;
+    }
+
+    .divFooter img {
+width: 1.6rem;
+    }
+
+    
+}
