@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/productos.css">
     <title>Productos</title>
 </head>
+
 <body>
     <div class="divPadre">
-        <div class="divHeader">
+        <!--
+           <div class="divHeader">
             <div class="logo">
                 <img src="../img/GGLogo.png" alt="">
             </div>
@@ -28,20 +37,183 @@
                     <li><a href="carrito.html">Carrito</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="productos">
-            <div class="filtroProductos">
-                <h1>Filtrar</h1>
-                <ul class="listaFiltros">
-                    <li><a href="#">Familiares</a></li>
-                    <li><a href="#">Accion</a></li>
-                    <li><a href="#">Rol</a></li>
-                    <li><a href="#">Dados</a></li>
-                    <li><a href="#">Cartas</a></li>
-                    <li><a href="#">Didacticos</a></li>
-                    <li><a href="#">Adultos</a></li>
+        </div> 
+        -->
+        <div class="row header">
+            <div class="container col-6">
+                <div class="logo">
+                    <img src="../img/GGLogo.png" alt="" style="width:15rem;">
+                </div>
+            </div>
+            <div class="container col-6 header-menu">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">Carrito</a>
+                    </li>
                 </ul>
             </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container" style="padding: 0.5rem;">
+                <div class="row">
+                    <!-- Fila de categorias -->
+                    <div class="btn-group col-12" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">Familiares</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">Accion</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">Rol</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio4">Dados</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio5">Cartas</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio6">Didacticos</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio7">Adultos</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Fila de productos -->
+                <div class="container-fluid col-12">
+                    <div class="row">
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/Bang.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bang!</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/Catan.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Catan</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/CodigoSecreto.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Codigo Secreto</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/Exploding.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Exploding Kittens</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/KingOfTokyo.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">King of Tokyo</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/Monopoly.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Monopoly</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/situacion_limite.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Situacion Limite</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/Uno.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">UNO!</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/virus.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Virus</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/Exploding.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Exploding Kittens</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/Bang.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bang!</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; margin: 0.5rem;">
+                            <img src="../img/CodigoSecreto.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Codigo Secreto</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-secondary">Ver más</a>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--
+        <div class="productos">
+            
             <div class="listadoProductos">
                 <div class="articulo">
                     <div class="imgArticulo">
@@ -215,13 +387,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
-    <div class="divFooter">
-        <div class="copyright">
-            <p>Todos los derechos reservados</p>
+    <div class="row footer">
+        <div class="container col-6 footer-copyright">
+            <p>
+                Todos los derechos reservados
+            </p>
         </div>
-        <div class="redes">
+        <div class="container col-6 footer-redes">
             <img src="../img/instagram.png" alt="">
             <img src="../img/whatsapp.png" alt="">
             <img src="../img/facebook.png" alt="">
@@ -229,4 +403,5 @@
     </div>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,40 @@
+.header{
+    background-color: #E9E5D6;
+    border-bottom: 0.15rem solid #362706;
+}
+
+.logo{
+padding: 8px;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer{
+   background-color: #362706;
+   padding: 0.5rem;
+}
+
+.footer-copyright{
+color:#E9E5D6;
+display: flex;
+align-items: center;
+}
+
+.footer-copyright p{
+    color:#E9E5D6;
+    margin: 0;
+    }
+
+.footer-redes{
+display: flex;
+justify-content: end;
+}
+
+.footer-redes img{
+width: 2.5rem;
+margin: 0 0.5rem;
+}
