@@ -1,17 +1,17 @@
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
     .menu a {
         font-size: 1rem;
     }
-    
+
     iframe {
         display: none;
     }
 
-    .divDestacado{
+    .divDestacado {
         flex-direction: column;
     }
 
-    .divDestacado .btnPrimario, .divDestacado .btnSecundario  {
+    .divDestacado .btnPrimario, .divDestacado .btnSecundario {
         font-size: 1.2rem;
     }
 
@@ -19,9 +19,9 @@
         text-align: center;
     }
 
-    .divArticulos{
+    .divArticulos {
         flex-direction: column;
-       align-items: center;
+        align-items: center;
     }
 
     .divArticulos .articulo {
@@ -32,13 +32,29 @@
         text-align: center;
     }
 
-    .logo img{
+    .logo img {
         width: 12rem;
     }
 
     .divFooter img {
-width: 1.6rem;
+        width: 1.6rem;
     }
 
-    
+    .sobreNos{
+        flex-direction: column;
+    }
+
+    .sobreNos .textoSobreNos {
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    .sobreNos p{
+        text-align: left;
+    }
+
+    .sobreNos .personasSobreNos {
+        margin-top: 10px;
+    }
+
 }

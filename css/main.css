@@ -59,6 +59,11 @@
 
 .logo img {
     width: 15rem;
+    transition: transform 0.5s;
+}
+
+.logo img:hover {
+    transform: rotate(-4deg);
 }
 
 /* MENU */
