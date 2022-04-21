@@ -289,3 +289,40 @@
     color: #362706;
     cursor: pointer;
     transform: scale(1.05); }
+
+/* MEDIA QUERYS */
+@media only screen and (max-width: 400px) {
+  .divPadre {
+    display: grid;
+    grid-template-areas: "divHeader" "divContenido" "divFooter"; }
+  .logo img {
+    width: 12rem; }
+  .menu a {
+    font-size: 1rem; }
+  iframe {
+    display: none; }
+  .divDestacado {
+    flex-direction: column; }
+    .divDestacado .botonesDestacado {
+      text-align: center; }
+    .divDestacado .btnPrimario,
+    .divDestacado .btnSecundario {
+      font-size: 1.2rem; }
+    .divDestacado .imgDestacado {
+      text-align: center; }
+  .divArticulos {
+    flex-direction: column;
+    align-items: center; }
+    .divArticulos .articulo {
+      margin-top: 1rem; }
+  .divFooter img {
+    width: 1.6rem; }
+  .sobreNos {
+    flex-direction: column; }
+    .sobreNos .textoSobreNos {
+      margin: 0;
+      border-radius: 15px; }
+    .sobreNos p {
+      text-align: left; }
+    .sobreNos .personasSobreNos {
+      margin-top: 10px; } }
