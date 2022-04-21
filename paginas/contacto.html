@@ -12,10 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Contacto</title>
 </head>
-
 <body>
     <div class="divPadre">
         <div class="divHeader">
@@ -32,43 +31,45 @@
                 </ul>
             </nav>
         </div>
-        <div class="contacto">
-            <div class="infoContacto">
-                <form action="">
-                    <fieldset class="formContacto">
-                        <legend>
-                            Hacé tu consulta acá
-                        </legend>
-                        <div>
-                            <label for="nombre">Tu nombre:</label>
+        <div class="divContenido">
+            <div class="contacto">
+                <div class="infoContacto">
+                    <form action="">
+                        <fieldset class="formContacto">
+                            <legend>
+                                Hacé tu consulta acá
+                            </legend>
+                            <div>
+                                <label for="nombre">Tu nombre:</label>
+                            </div>
+                            <input type="text" name="nombre" class="campoForm">
+                            <div>
+                                <label for="email">Tu email:</label>
+                            </div>
+                            <input type="email" name="email" class="campoForm">
+                            <div>
+                                <label for="consulta">Tu consulta:</label>
+                            </div>
+                            <textarea class="campoForm" name="consulta" id="" cols="30" rows="5"
+                                placeholder="Escribe aquí"></textarea>
+                            <div style="text-align:center">
+                                <input class="btnPrimario" type="button" value="Enviar" class="btnEnviar">
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="datosContacto">
+                        <div class="dato">
+                            <img src="../img/location.png" alt="">
+                            <p>Direccion del local 1994</p>
                         </div>
-                        <input type="text" name="nombre" class="campoForm">
-                        <div>
-                            <label for="email">Tu email:</label>
+                        <div class="dato">
+                            <img src="../img/phone.png" alt="">
+                            <p>250-333-333</p>
                         </div>
-                        <input type="email" name="email" class="campoForm">
-                        <div>
-                            <label for="consulta">Tu consulta:</label>
+                        <div class="dato">
+                            <img src="../img/clock.png" alt="">
+                            <p>Lunes a Viernes - 09:00hs - 19:00hs</p>
                         </div>
-                        <textarea class="campoForm" name="consulta" id="" cols="30" rows="5"
-                            placeholder="Escribe aquí"></textarea>
-                        <div style="text-align:center">
-                            <input class="btnPrimario" type="button" value="Enviar" class="btnEnviar">
-                        </div>
-                    </fieldset>
-                </form>
-                <div class="datosContacto">
-                    <div class="dato">
-                        <img src="../img/location.png" alt="">
-                        <p>Direccion del local 1994</p>
-                    </div>
-                    <div class="dato">
-                        <img src="../img/phone.png" alt="">
-                        <p>250-333-333</p>
-                    </div>
-                    <div class="dato">
-                        <img src="../img/clock.png" alt="">
-                        <p>Lunes a Viernes - 09:00hs - 19:00hs</p>
                     </div>
                 </div>
             </div>
