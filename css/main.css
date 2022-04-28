@@ -113,7 +113,10 @@
   background-color: white;
   width: 18rem;
   border-radius: 1rem;
-  transition: box-shadow 0.15s, transform 0.15s; }
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
   .articulo:hover {
     box-shadow: 5px 5px 5px #362706;
     transform: translateY(-0.5rem); }
@@ -125,8 +128,7 @@
   .articulo .datosArticulo {
     padding: 1rem; }
   .articulo .imgArticulo {
-    text-align: center;
-    padding-top: 1rem; }
+    text-align: center; }
     .articulo .imgArticulo img {
       width: 12rem; }
   .articulo .puntosArticulo img {
@@ -135,7 +137,8 @@
     margin: 1rem 0; }
   .articulo .botonesArticulo {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 1rem; }
   .articulo .btnPrimario {
     font-size: 1.1rem;
     padding: 0.5rem 0.8rem; }
