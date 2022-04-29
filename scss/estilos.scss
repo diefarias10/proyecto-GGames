@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.15rem solid nth($paleta,1);
+    border-bottom: 0.10rem solid nth($paleta,1);
     grid-area: divHeader;
 }
 
@@ -87,9 +87,11 @@
             font-weight: bold;
             color: nth($paleta,1);
             padding: 0.5rem;
+            
 
             &:hover {
                 border-bottom: 0.2rem solid nth($paleta,2);
+                border-top: 0.2rem solid #464E2E;
                 color: nth($paleta,2);
             }
         }
@@ -157,15 +159,8 @@
 /* ARTICULOS */
 
 .articulo {
-    box-shadow: 0px 0px 4px nth($paleta,2);
-    background-color: white;
-    width: 18rem;
-    border-radius: 1rem;
-    transition: box-shadow 0.15s, transform 0.15s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
+   @include carta;
+    
     &:hover {
         box-shadow: 5px 5px 5px nth($paleta,1);
         transform: translateY(-0.5rem);
@@ -196,6 +191,10 @@
 
     .infoArticulo {
         margin: 1rem 0;
+
+        
+            
+        
     }
 
     .botonesArticulo {

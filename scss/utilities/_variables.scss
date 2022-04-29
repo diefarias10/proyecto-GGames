@@ -5,3 +5,16 @@ $paleta:
 #464E2E,
 #ACB992,
 #E9E5D6;
+
+
+@mixin carta{
+    box-shadow: 0px 0px 4px #464e2e;
+    background-color: white;
+    width: 18rem;
+    border-radius: 1rem;
+    transition: box-shadow 0.15s, transform 0.15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+

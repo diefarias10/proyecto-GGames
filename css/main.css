@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.15rem solid #362706;
+  border-bottom: 0.1rem solid #362706;
   grid-area: divHeader; }
 
 .divDestacado {
@@ -67,6 +67,7 @@
       padding: 0.5rem; }
       .menu li a:hover {
         border-bottom: 0.2rem solid #464E2E;
+        border-top: 0.2rem solid #464E2E;
         color: #464E2E; }
 
 /* DESTACADO */
@@ -109,7 +110,7 @@
 
 /* ARTICULOS */
 .articulo {
-  box-shadow: 0px 0px 4px #464E2E;
+  box-shadow: 0px 0px 4px #464e2e;
   background-color: white;
   width: 18rem;
   border-radius: 1rem;
