@@ -299,6 +299,18 @@
   .divPadre {
     display: grid;
     grid-template-areas: "divHeader" "divContenido" "divFooter"; }
+  .divHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem; }
+    .divHeader .menu {
+      margin: 0; }
+      .divHeader .menu ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column; }
   .logo img {
     width: 12rem; }
   .menu a {
@@ -318,7 +330,10 @@
     flex-direction: column;
     align-items: center; }
     .divArticulos .articulo {
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      width: 24rem; }
+      .divArticulos .articulo .imgArticulo img {
+        width: 18rem; }
   .divFooter img {
     width: 1.6rem; }
   .sobreNos {
@@ -329,4 +344,20 @@
     .sobreNos p {
       text-align: left; }
     .sobreNos .personasSobreNos {
-      margin-top: 10px; } }
+      margin-top: 10px; }
+  .contacto {
+    padding: 5rem 0; }
+    .contacto .infoContacto {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .contacto .infoContacto .formContacto {
+        width: 100%;
+        margin-bottom: 1rem; }
+        .contacto .infoContacto .formContacto legend {
+          font-size: 1.5rem;
+          padding: 0; }
+      .contacto .infoContacto .datosContacto .dato img {
+        width: 2rem; }
+      .contacto .infoContacto .datosContacto .dato p {
+        font-size: 1rem; } }

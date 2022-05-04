@@ -22,11 +22,11 @@
 }
 
 .divHeader {
-    background-color: nth($paleta,4);
+    background-color: nth($paleta, 4);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.10rem solid nth($paleta,1);
+    border-bottom: 0.10rem solid nth($paleta, 1);
     grid-area: divHeader;
 }
 
@@ -40,16 +40,16 @@
     padding: 5rem 0;
     display: flex;
     justify-content: space-around;
-    background-color: nth($paleta,4);
+    background-color: nth($paleta, 4);
 }
 
 .divFooter {
-    background-color: nth($paleta,1);
+    background-color: nth($paleta, 1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    box-shadow: 0px 0px 4px nth($paleta,1);
+    box-shadow: 0px 0px 4px nth($paleta, 1);
     grid-area: divFooter;
 }
 
@@ -85,14 +85,14 @@
             font-size: 1.5rem;
             font-family: IM Fell English SC;
             font-weight: bold;
-            color: nth($paleta,1);
+            color: nth($paleta, 1);
             padding: 0.5rem;
-            
+
 
             &:hover {
-                border-bottom: 0.2rem solid nth($paleta,2);
+                border-bottom: 0.2rem solid nth($paleta, 2);
                 border-top: 0.2rem solid #464E2E;
-                color: nth($paleta,2);
+                color: nth($paleta, 2);
             }
         }
     }
@@ -118,7 +118,7 @@
         font-family: IM Fell English SC;
         font-weight: bold;
         font-size: 2.5rem;
-        color: nth($paleta,4);
+        color: nth($paleta, 4);
     }
 
     .infoDestacado {
@@ -152,29 +152,29 @@
 
     iframe {
         width: 29rem;
-        box-shadow: 0px 0px 15px nth($paleta,4);
+        box-shadow: 0px 0px 15px nth($paleta, 4);
     }
 }
 
 /* ARTICULOS */
 
 .articulo {
-   @include carta;
-    
+    @include carta;
+
     &:hover {
-        box-shadow: 5px 5px 5px nth($paleta,1);
+        box-shadow: 5px 5px 5px nth($paleta, 1);
         transform: translateY(-0.5rem);
     }
 
     h2 {
         font-family: IM Fell English SC;
         font-size: 1.3rem;
-        color: nth($paleta,1);
+        color: nth($paleta, 1);
         text-transform: uppercase;
     }
 
     .datosArticulo {
-        padding: 1rem; 
+        padding: 1rem;
     }
 
     .imgArticulo {
@@ -192,9 +192,9 @@
     .infoArticulo {
         margin: 1rem 0;
 
-        
-            
-        
+
+
+
     }
 
     .botonesArticulo {
@@ -223,7 +223,7 @@
     }
 
     p {
-        color: nth($paleta,4);
+        color: nth($paleta, 4);
     }
 }
 
@@ -233,9 +233,10 @@
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background-color: nth($paleta,3);
+    background-color: nth($paleta, 3);
+
     .textoSobreNos {
-        background-color: nth($paleta,4);
+        background-color: nth($paleta, 4);
         border-top-right-radius: 200px;
         border-bottom-left-radius: 200px;
         border-top-left-radius: 10px;
@@ -249,19 +250,19 @@
         transition: transform 0.5s, box-shadow 0.5s;
 
         &:hover {
-            box-shadow: -8px 9px 4px nth($paleta,1);
+            box-shadow: -8px 9px 4px nth($paleta, 1);
             transform: translateY(-2rem);
         }
 
         p {
             font-size: 14pt;
-            color: nth($paleta,1);
+            color: nth($paleta, 1);
         }
 
         h1 {
             font-size: 30pt;
             font-family: IM Fell English SC;
-            color: nth($paleta,1);
+            color: nth($paleta, 1);
             margin-bottom: 15px;
         }
 
@@ -269,15 +270,15 @@
             text-align: end;
             font-size: 25pt;
             font-family: IM Fell English SC;
-            color: nth($paleta,1);
+            color: nth($paleta, 1);
             margin-top: 25px;
         }
     }
 
     .personasSobreNos {
-        background-color: nth($paleta,1);
+        background-color: nth($paleta, 1);
         text-align: center;
-        color: nth($paleta,4);
+        color: nth($paleta, 4);
         border-radius: 15px;
         padding: 0 30px;
 
@@ -311,10 +312,10 @@
 
     .formContacto {
         width: 500px;
-        border: 2px solid nth($paleta,1);
+        border: 2px solid nth($paleta, 1);
         border-radius: 10px;
-        background-color: nth($paleta,4);
-        color: nth($paleta,1);
+        background-color: nth($paleta, 4);
+        color: nth($paleta, 1);
         font-weight: bold;
         font-size: 20pt;
         padding: 10px 30px;
@@ -331,7 +332,7 @@
         }
 
         .campoForm {
-            border: 1px solid nth($paleta,1);
+            border: 1px solid nth($paleta, 1);
             border-radius: 3px;
             font-size: 15pt;
             width: 90%;
@@ -345,8 +346,8 @@
         justify-content: space-around;
 
         .datosContacto {
-            background-color: nth($paleta,4);
-            border: 2px solid nth($paleta,1);
+            background-color: nth($paleta, 4);
+            border: 2px solid nth($paleta, 1);
             width: fit-content;
             height: fit-content;
             padding: 20px;
@@ -361,7 +362,7 @@
                     font-family: Roboto;
                     font-size: 20pt;
                     font-weight: bold;
-                    color: nth($paleta,1);
+                    color: nth($paleta, 1);
                 }
 
                 img {
@@ -376,21 +377,21 @@
 /* BOTONES */
 
 .btnPrimario {
-    background-color: nth($paleta,2);
+    background-color: nth($paleta, 2);
     border-radius: 0.4rem;
     border: none;
-    color: nth($paleta,4);
+    color: nth($paleta, 4);
     font-family: IM Fell English SC;
     font-size: 1.5rem;
     text-transform: uppercase;
     padding: 0.3rem 1rem;
-    box-shadow: 0px 0px 4px nth($paleta,1);
+    box-shadow: 0px 0px 4px nth($paleta, 1);
     transition: all 0.15s;
 
     &:hover {
         background-color: #F8B84E;
         border: none;
-        color: nth($paleta,1);
+        color: nth($paleta, 1);
         cursor: pointer;
         transform: scale(1.05);
     }
@@ -400,7 +401,7 @@
     background-color: transparent;
     border-radius: 0.4rem;
     border: none;
-    color: nth($paleta,2);
+    color: nth($paleta, 2);
     font-family: IM Fell English SC;
     font-size: 1.5rem;
     padding: 0.3rem 1rem;
@@ -408,7 +409,7 @@
 
     &:hover {
         background-color: #ACB99280;
-        color: nth($paleta,1);
+        color: nth($paleta, 1);
         cursor: pointer;
         transform: scale(1.05);
     }
@@ -424,6 +425,24 @@
             "divHeader"
             "divContenido"
             "divFooter";
+    }
+
+    .divHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        .menu {
+            margin: 0;
+
+            ul {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 
     .logo img {
@@ -461,6 +480,14 @@
 
         .articulo {
             margin-top: 1rem;
+            width: 24rem;
+
+            .imgArticulo {
+                img {
+                    width: 18rem;
+                }
+
+            }
         }
     }
 
@@ -486,4 +513,33 @@
             margin-top: 10px;
         }
     }
+
+    .contacto {
+        padding: 5rem 0;
+        .infoContacto {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .formContacto {
+                width: 100%;
+                margin-bottom: 1rem;
+                legend{
+                    font-size: 1.5rem;
+                    padding: 0;
+                }
+            }
+            .datosContacto{
+               .dato{
+                img{
+                    width: 2rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+               }
+            }
+        }
+    }
+    
 }
