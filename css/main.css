@@ -196,15 +196,19 @@
     text-align: center;
     color: #E9E5D6;
     border-radius: 15px;
-    padding: 0 30px; }
+    padding: 0 30px;
+    width: 35%; }
     .sobreNos .personasSobreNos .persona {
       margin: 20px auto; }
       .sobreNos .personasSobreNos .persona h2 {
         font-size: 20pt;
         font-family: IM Fell English SC;
         margin-bottom: 10px; }
+      .sobreNos .personasSobreNos .persona .datosPersona {
+        text-align: start; }
       .sobreNos .personasSobreNos .persona p {
-        font-size: 11pt; }
+        font-size: 11pt;
+        margin: 0.5rem 0; }
       .sobreNos .personasSobreNos .persona img {
         width: 100px; }
 
@@ -294,6 +298,99 @@
     cursor: pointer;
     transform: scale(1.05); }
 
+/* COMPRAS */
+.tituloCarrito {
+  text-align: center;
+  font-family: IM Fell English SC;
+  color: #362706; }
+
+.carrito {
+  display: flex;
+  background-color: #ACB992;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center; }
+  .carrito .listaCompras {
+    background-color: #E9E5D6;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1rem;
+    height: fit-content;
+    box-shadow: 0px 0px 4px #464E2E; }
+    .carrito .listaCompras .compra {
+      display: flex;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      padding: 0.5rem;
+      transition: background-color 0.5s; }
+      .carrito .listaCompras .compra:hover {
+        background-color: #ACB992; }
+      .carrito .listaCompras .compra .imgCompra img {
+        width: 8rem; }
+      .carrito .listaCompras .compra .datosCompra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1rem;
+        width: 30rem; }
+        .carrito .listaCompras .compra .datosCompra h2 {
+          margin-bottom: 0.5rem;
+          color: #362706;
+          font-weight: normal; }
+      .carrito .listaCompras .compra .precioCompra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-left: 2px solid #362706;
+        padding: 0 1rem;
+        width: 10rem; }
+        .carrito .listaCompras .compra .precioCompra h2 {
+          font-weight: bold;
+          color: #362706;
+          border-radius: 5px;
+          padding: 0.2rem 0.5rem;
+          white-space: nowrap;
+          text-align: center; }
+      .carrito .listaCompras .compra .borrado {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+        border-left: 2px solid #362706; }
+        .carrito .listaCompras .compra .borrado img {
+          width: 3rem; }
+  .carrito .totalCompra {
+    width: 30%;
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 1rem;
+    background-color: #E9E5D6;
+    box-shadow: 0px 0px 4px #464E2E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .carrito .totalCompra h3 {
+      font-family: IM Fell English SC;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #362706; }
+    .carrito .totalCompra h4 {
+      background-color: #362706;
+      color: white;
+      display: inline-block;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      font-size: 3rem;
+      transition: transform 0.5s; }
+      .carrito .totalCompra h4:hover {
+        transform: rotate(10deg); }
+    .carrito .totalCompra .botonesCompra {
+      width: 100%;
+      display: flex;
+      justify-content: space-around; }
+
 /* MEDIA QUERYS */
 @media only screen and (max-width: 400px) {
   .divPadre {
@@ -344,7 +441,8 @@
     .sobreNos p {
       text-align: left; }
     .sobreNos .personasSobreNos {
-      margin-top: 10px; }
+      margin-top: 10px;
+      width: 100%; }
   .contacto {
     padding: 5rem 0; }
     .contacto .infoContacto {
@@ -360,4 +458,10 @@
       .contacto .infoContacto .datosContacto .dato img {
         width: 2rem; }
       .contacto .infoContacto .datosContacto .dato p {
-        font-size: 1rem; } }
+        font-size: 1rem; }
+  .carrito {
+    flex-direction: column; }
+    .carrito .listaCompras {
+      margin-bottom: 0.5rem; }
+  .filtros {
+    display: none; } }

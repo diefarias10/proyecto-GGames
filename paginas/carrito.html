@@ -1,44 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Juegos, Juegos de mesa, Cartas, Entretenimiento, Rol, Carrito, Compras">
+    <meta name="description" content="Pagina de carrito de compras en la pagina de GGames">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <title>Carrito</title>
 </head>
-<body>
-    <header>
-        <div>
-            <img src="../img/GGLogo.png" alt="" class="logoGG">
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="#">Carrito</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>CONTENIDO CARRITO</h1>
-    </main>
-    <footer>
-        <p>Todos los derechos reservados ©</p>
-        <div>
-            <a href="#"><img src="../Img/Facebook.png" alt="" class="redes"></a>
-            <a href=""><img src="../Img/Whatsapp.png" alt="" class="redes"></a>
-            <a href=""><img src="../Img/Instagram.png" alt="" class="redes"></a>
-        </div>
 
+<body>
+    <div class="divPadre">
+        <header class="divHeader">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/GGLogo.png" alt="">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="divContenido">
+            <div class="carrito">
+                <ul class="listaCompras">
+                    <li class="compra">
+                        <div class="imgCompra">
+                            <img src="../img/Bang.png" alt="">
+                        </div>
+                        <div class="datosCompra">
+                            <h2>Bang!</h2>
+                            <p>(4) Articulos disponible/s</p>
+                        </div>
+                        <div class="precioCompra">
+                            <h2>$ 1.500,00</h2>
+                        </div>
+                        <div class="borrado">
+                            <img src="../img/delete.png" alt="">
+                        </div>
+                    </li>
+                    <li class="compra">
+                        <div class="imgCompra">
+                            <img src="../img/KingOfTokyo.png" alt="">
+                        </div>
+                        <div class="datosCompra">
+                            <h2>King of Tokyo</h2>
+                            <p>(1) Articulos disponible/s</p>
+                        </div>
+                        <div class="precioCompra">
+                            <h2>$ 3.000,00</h2>
+                        </div>
+                        <div class="borrado">
+                            <img src="../img/delete.png" alt="">
+                        </div>
+                    </li>
+                    <li class="compra">
+                        <div class="imgCompra">
+                            <img src="../img/virus.png" alt="">
+                        </div>
+                        <div class="datosCompra">
+                            <h2>Virus</h2>
+                            <p>(10) Articulos disponible/s</p>
+                        </div>
+                        <div class="precioCompra">
+                            <h2>$ 500,00</h2>
+                        </div>
+                        <div class="borrado">
+                            <img src="../img/delete.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <div class="totalCompra">
+                    <h3>Total de tu compra</h3>
+                    <h4>$ 5.000,00</h4>
+                    <div class="botonesCompra">
+                        <input class="btnSecundario" type="button" value="Vaciar carrito">
+                        <input class="btnPrimario" type="button" value="Pagar">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="divFooter">
+        <div class="copyright">
+            <p>Todos los derechos reservados ©</p>
+        </div>
+        <div class="redes">
+            <img src="../img/instagram.png" alt="">
+            <img src="../img/whatsapp.png" alt="">
+            <img src="../img/facebook.png" alt="">
+        </div>
     </footer>
 </body>
+
 </html>
